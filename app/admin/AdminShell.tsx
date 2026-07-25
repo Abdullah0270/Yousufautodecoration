@@ -3,7 +3,7 @@
 import { usePathname } from "next/navigation";
 import Sidebar from "./sidebar";
 
-export default function AdminLayoutClient({
+export default function AdminShell({
   children,
 }: {
   children: React.ReactNode;
@@ -14,7 +14,6 @@ export default function AdminLayoutClient({
     pathname === "/admin/login" ||
     pathname === "/admin/register";
 
-  // Login/Register pages
   if (isAuthPage) {
     return (
       <main className="min-h-screen bg-slate-100">
@@ -23,7 +22,6 @@ export default function AdminLayoutClient({
     );
   }
 
-  // Protected admin pages
   return (
     <div className="min-h-screen bg-slate-100">
       <Sidebar />

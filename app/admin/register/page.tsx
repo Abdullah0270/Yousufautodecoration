@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { useActionState } from "react";
 import { registerAdmin } from "@/actions/auth";
-import AdminAuth from "../AdminAuth";
 
 const initialState = {
   error: "",
@@ -16,7 +15,7 @@ export default function AdminRegisterPage() {
   );
 
   return (
-    <AdminAuth>
+    
     <main className="relative flex min-h-screen items-center justify-center overflow-hidden bg-slate-950 px-6 py-12">
 
       <div className="absolute -left-32 top-0 h-96 w-96 rounded-full bg-orange-500/10 blur-[120px]" />
@@ -168,6 +167,6 @@ export default function AdminRegisterPage() {
       </div>
 
     </main>
-    </AdminAuth>
+    
   );
 }
