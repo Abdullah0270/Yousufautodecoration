@@ -1,5 +1,4 @@
 import { prisma } from "@/lib/prisma";
-import AdminAuth from "../admin/AdminAuth";
 import AboutSlider from "@/components/website/AboutSlider";
 import {
   BadgeCheck,
@@ -24,7 +23,7 @@ export default async function AboutPage() {
   return (
     <>
       <Navbar />
-      <AdminAuth>
+      
         <main className="min-h-screen overflow-hidden bg-slate-950">
 
           {/* ===================================================== */}
@@ -474,8 +473,8 @@ export default async function AboutPage() {
           </section>
 
         </main>
-      </AdminAuth>
       <Footer />
+
     </>
   );
 

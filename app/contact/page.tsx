@@ -1,7 +1,6 @@
 import Footer from "@/components/website/Footer";
 import Navbar from "@/components/website/Navbar";
 import { prisma } from "@/lib/prisma";
-import AdminAuth from "app/admin/AdminAuth";
 import {
   MapPin,
   Phone,
@@ -16,7 +15,6 @@ export default async function ContactPage() {
 
   return (
   <>
-  <AdminAuth>
   <Navbar />
     <main className="min-h-screen bg-slate-950">
 
@@ -332,7 +330,6 @@ export default async function ContactPage() {
     </main>
     
       <Footer />
-    </AdminAuth>
     </>
   );
 }
