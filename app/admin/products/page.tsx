@@ -111,7 +111,7 @@ export default async function ProductsPage({
             MAIN CONTENT
         ========================= */}
 
-        <div className="grid gap-8 xl:grid-cols-3">
+        <div className="grid gap-8 xl:grid-cols-1">
 
           {/* Product Form */}
 
